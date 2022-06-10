@@ -1,0 +1,334 @@
+/*le puse mas px porque por defecto mi pc es mas de 1024px3*/
+body{
+        font-family: 'Rubik', sans-serif;
+        background-color: black;
+        color: #8034eb;
+    }
+
+.buscador{
+        text-align: right;
+        margin-right: 30px;
+    }
+.footer{
+        text-align: center;
+    }
+.homelinks{
+        text-align: center;
+        color: #8034eb;
+        text-decoration: none;
+        margin: 15px;
+    }
+.logonombre{
+        display: flex;
+        flex-direction: column;
+    }
+.logo{
+        width: 100px;
+        height: 100px;
+        margin: 15px;
+    } 
+.nombre{
+        text-align: left;
+        vertical-align: middle;
+        margin: 15px;
+    }
+.fotomc{
+        width: 300px;
+        height: 300px;
+        margin: auto;
+        display: block;
+        border-radius: 50%;
+    }
+.namemc{
+        text-align: center;
+    }
+.topvaf{
+        color: gray;
+    }
+.flexfav{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        height: 300px;
+    }
+.topflexfav{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        height: 40px;
+        color: #8034eb;
+    }
+.barra{
+        border-color: #8034eb;
+    }
+
+.divprin{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-decoration: none;
+}
+
+
+.article{
+    display: flex;
+    height: 500px;
+    width: 900px;
+}
+
+.artistas{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    text-decoration: none;
+    text-align: center;
+}
+
+.img-a{
+    width: 230px;
+    height: 190px;
+    margin:20px;
+}
+
+.albumes{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    text-align: center;
+}
+
+.img-b{
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+}
+
+.canciones{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    text-align: center;
+    text-decoration: none;
+}
+
+.img-c{
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+}
+
+p{
+    padding-left: 20px;
+}
+
+.titulo-g{
+    text-align: center;
+    font-size: 25px;
+}
+.imagenes1{
+    width: 400px;
+    height: 200px;
+    padding: 10px;
+    border: solid whitesmoke 3px;
+    margin: 5px;
+}
+.parrafoPF{
+ font-size: 15px;
+text-align: right;
+}
+.parrafo1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+
+.contenedorpadre{
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    justify-content: space-around;
+    height: 30px;
+    padding: 15px;
+}
+.animales{
+    text-align: center;
+}
+.imgda{
+    width: 150px;
+    height: 100px;
+}
+
+.titulos1{
+    font-size: 35px;
+    text-decoration: underline;
+}
+.titulos2{
+    font-size: 25px;
+}
+.titulo3{
+    text-align: right;
+}
+
+
+.tit-hiphop{
+    text-align: center;
+    padding-top: 40px;
+}
+
+.text-cant{
+padding-left: 30px;
+padding-right: 20px;
+}
+
+.info-h{
+    text-align: center;
+}
+
+.cantantes-p{
+    padding-top: 40px;
+}
+
+.img-cant{
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+}
+
+@media (max-width: 1524px){
+
+    body{
+        font-family: 'Rubik', sans-serif;
+        background-color: black;
+        color: #8034eb;
+    }
+    .buscador{
+        text-align: right;
+        margin-right: 30px;
+    }
+    .footer{
+        text-align: center;
+    }
+    .homelinks{
+        text-align: center;
+        color: #8034eb;
+        text-decoration: none;
+        margin: 15px;
+    }
+    .logonombre{
+        display: flex;
+        flex-direction: column;
+    }
+    .logo{
+        width: 100px;
+        height: 100px;
+        margin: 15px;
+    } 
+    .nombre{
+        text-align: left;
+        vertical-align: middle;
+        margin: 15px;
+    }
+    .fotomc{
+        width: 300px;
+        height: 300px;
+        margin: auto;
+        display: block;
+        border-radius: 50%;
+    }
+    .namemc{
+        text-align: center;
+    }
+    .topvaf{
+        color: gray;
+    }
+    .flexfav{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        height: 300px;
+    }
+    .topflexfav{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        height: 40px;
+        color: #8034eb;
+    }
+    .barra{
+        border-color: #8034eb;
+    }
+}
+    
+
+@media (max-width: 425px){
+        body{
+            font-family: 'Rubik', sans-serif;
+            background-color: black;
+            color: #8034eb;
+        }
+        .buscador{
+            text-align: right;
+            margin-right: 30px;
+        }
+        .footer{
+            text-align: center;
+        }
+        .homelinks{
+            text-align: center;
+            color: #8034eb;
+            text-decoration: none;
+            margin: 15px;
+        }
+        .logonombre{
+            display: flex;
+            flex-direction: column;
+        }
+        .logo{
+            width: 50px;
+            height: 50px;
+            margin: 7px;
+        } 
+        .nombre{
+            text-align: left;
+            vertical-align: middle;
+            margin: 10px;
+        }
+        .fotomc{
+            width: 150px;
+            height: 150px;
+            margin: auto;
+            display: block;
+            border-radius: 50%;
+        }
+        .namemc{
+            text-align: center;
+        }
+        .topvaf{
+            color: gray;
+        }
+        .flexfav{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-around;
+            height: 40px;
+        }
+        .topflexfav{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-around;
+            height: 40px;
+        }
+        .barra{
+            border-color: #8034eb;
+        }
+      
+    }
+
+   
