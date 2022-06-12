@@ -1,11 +1,11 @@
-let chart = " https://developers.deezer.com/api/chart"
+let tracks = 'https://api.allorigins.win/raw?url=https://api.deezer.com/chart/0/tracks'
 
-fetch(' https://developers.deezer.com/api/chart ')
+fetch(tracks)
   .then(function (response) {
       return response.json();
   })
   .then(function (data) {
-      console.log(data.results[0]);
-      let info = data.results[0];
+      console.log(data.data);
       
+      let info = (data.results)
   })
