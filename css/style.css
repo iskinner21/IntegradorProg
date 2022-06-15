@@ -72,7 +72,19 @@ body{
 }
 
 
-.article{
+.articleCanciones{
+    display: flex;
+    height: 500px;
+    width: 900px;
+}
+
+.articleArtistas{
+    display: flex;
+    height: 500px;
+    width: 900px;
+}
+
+.articleAlbumes{
     display: flex;
     height: 500px;
     width: 900px;
