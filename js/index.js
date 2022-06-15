@@ -28,14 +28,30 @@ fetch(URLartistas)
     console.log(error);
   }) 
   
-let albums = 'https://api.allorigins.win/raw?url=https://api.deezer.com/chart/0/albums'
+let URLalbums = 'https://api.allorigins.win/raw?url=https://api.deezer.com/chart/0/albums'
 
-fetch(albums)
+fetch(URLalbums)
   .then(function (response) {
     return response.json();
   })
   .then(function (data) {
-    console.log(data.data);
+     console.log(data.data);
+
+     let info = data.data;
+
+      let albums = document.querySelector('.articleAlbumes')
+      let elementosLista = '';
+
+      for(let i=0; i<6; i++){
+       elementosLista += `<div class="albumes">
+       <a href="./detail-album.html?id=${info[i].id}"><h3>${info[i].title}</h3>
+       <img src="   ${info[i].cover}" class="img-b"  alt="${info[i].title}">
+       <p>${info[i].artist.name}</p>
+       </a>
+       </div>`
+      };
+
+      albums.innerHTML = elementosLista;
   })
   .catch(function(error){
     console.log(error);
