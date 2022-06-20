@@ -2,10 +2,10 @@ let qS= location.search;
 let qSObject= new URLSearchParams(qS);
 
 let idTrack= qSObject.get('id');
- const url=`https://api.allorigins.win/raw?url=https://api.deezer.com/track/${idTrack}`; 
+let urlSR=`https://api.allorigins.win/raw?url=https://api.deezer.com/track/${idTrack}`; 
 
 
-fetch(url )
+fetch(urlSR)
 .then(function (response) {
   return response.json();  
 })
@@ -13,7 +13,7 @@ fetch(url )
     console.log(data);
     let imprimir= document.querySelector('.detailtrack');
 
-    let info= data;
+    let info = data;
     
 
    

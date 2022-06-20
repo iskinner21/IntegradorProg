@@ -1,0 +1,30 @@
+
+
+let qs = location.search; 
+let qtso = new URLSearchParams(qs); 
+let id = qtso.get('id'); 
+let url1 = `https://api.allorigins.win/raw?url=https://api.deezer.com/artist/${id}` ;
+
+
+fetch (url1)
+    .then (function (response) {
+        return response.json()
+    })
+    .then (function (data) {
+        console.log(data);
+
+        let title = document.querySelector ('h1');
+        let imgAlbum = document.querySelector ('.imagenes1');
+        let temasAlbum = document.querySelector ('.cancionda');
+
+        title.innerText = data.name;
+
+        imgAlbum.innerHTML += `<img src="${data.picture_medium}" alt="" class="imgda">`
+
+    })
+    .catch(function(error){
+        console.log(error);
+    })
+
+
+
