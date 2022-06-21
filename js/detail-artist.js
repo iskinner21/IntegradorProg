@@ -18,7 +18,7 @@ fetch (url1)
         let temasAlbum = document.querySelector ('.cancionda');
 
         title.innerText = data.name;
-        imgAlbum.src =  data.picture 
+        imgAlbum.src =  data.picture;
 
     })
     .catch(function(error){
