@@ -47,7 +47,7 @@ fetch(urlSR)
         console.log(error);
     })
     
-    fav.addEventListener ('click', function (e) {
+    fav.addEventListener ('boton', function (e) {
         e.preventDefault();
     
         if (favoritos.includes(id)) { 

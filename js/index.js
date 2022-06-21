@@ -4,17 +4,17 @@ let URLartistas = 'https://api.allorigins.win/raw?url=https://api.deezer.com/cha
 
 fetch(URLartistas)
   .then(function (response) {
-    return response.json();
+     return response.json();
   })
   .then(function (data) {
-    console.log(data.data);
-    let info = data.data; 
+     console.log(data.data);
+     let info = data.data; 
 
-    let artistas = document.querySelector('.articleArtistas');
-    let elementosLista = '';
+     let artistas = document.querySelector('.articleArtistas');
+     let elementosLista = '';
 
     
-    for(let i=0; i<6; i++){
+     for(let i=0; i<6; i++){
         elementosLista += `<div class="artistas">
         <a href="./detail-artist.html?id=${info[i].id}"><h3>${info[i].name}</h3>
         <img src="   ${info[i].picture}" class="img-a" alt="${info[i].name}"
@@ -22,7 +22,7 @@ fetch(URLartistas)
        </div>`
     };
 
-    artistas.innerHTML = elementosLista;
+     artistas.innerHTML = elementosLista;
     })
   .catch(function(error){
     console.log(error);
